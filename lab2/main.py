@@ -17,16 +17,16 @@ def is_number(x):
 
 def my_printf(format_string,param):
     #print(format_string)
-    shouldDo=True
+    skip = 0
     for idx in range(0,len(format_string)):
-        if shouldDo:
+        if skip == 0:
             if format_string[idx] == '#' and format_string[idx+1] == 'k':
                 print(invert(param),end="")
-                shouldDo=False
+                skip = 1
             else:
                 print(format_string[idx],end="")
         else:
-            shouldDo=True
+            skip -= 1
     print("")
 
 data=sys.stdin.readlines()
