@@ -12,6 +12,8 @@ def invert(param):
     
     return ret
 
+def is_number(x):
+    return x.isnumerical()
 
 def my_printf(format_string,param):
     #print(format_string)
