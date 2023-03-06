@@ -11,7 +11,7 @@ def invert(param, length):
             ret = ret + param[i].lower()
             
     while len(ret) < length:
-        ret = ret + " "
+        ret = " " + ret
     
     return ret
 
