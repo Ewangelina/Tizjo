@@ -16,7 +16,7 @@ def invert(param, length):
     return ret
 
 def is_number(x):
-    return x.isnumerical()
+    return x.isnumeric()
 
 def my_printf(format_string,param):
     #print(format_string)
@@ -35,8 +35,11 @@ def my_printf(format_string,param):
                     num += int(format_string[i])
                     i += 1
                 
-                print(invert(param, num),end="")
-                skip = idx - i
+                if format_string[i] == 'k':
+                    print(invert(param, num),end="")
+                    skip = i - idx
+                else:
+                    print(format_string[idx],end="")
                 
             else:
                 print(format_string[idx],end="")
