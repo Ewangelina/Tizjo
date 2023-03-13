@@ -2,6 +2,19 @@
 
 import sys
 
+def invert_lengthen(param, min_length):
+    ret = ""
+    for i in range(len(param)):
+        if param[i].islower():
+            ret = ret + param[i].upper()
+        else:
+            ret = ret + param[i].lower()
+            
+    while len(ret) < min_length:
+        ret = " " + ret
+    
+    return ret
+
 def my_printf(format_string,param):
     #print(format_string)
     shouldDo=True
