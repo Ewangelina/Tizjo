@@ -28,6 +28,9 @@ def invert_shorten(param, max_length):
                 
     return ret
 
+def is_number(x):
+    return x.isnumeric()
+
 def my_printf(format_string,param):
     #print(format_string)
     shouldDo=True
