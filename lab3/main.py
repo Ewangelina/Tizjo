@@ -33,16 +33,45 @@ def is_number(x):
 
 def my_printf(format_string,param):
     #print(format_string)
-    shouldDo=True
+    skip = 0
     for idx in range(0,len(format_string)):
-        if shouldDo:
+        if skip == 0:
             if format_string[idx] == '#' and format_string[idx+1] == 'k':
-                print(param,end="")
-                shouldDo=False
+                print(invert_lengthen(param, -1),end="")
+                skip = 1
+            elif format_string[idx] == '#' and is_number(format_string[idx+1]): # #5k
+                i = idx + 2
+                num = int(format_string[idx+1])
+                
+                while is_number(format_string[i]):
+                    num *= 10
+                    num += int(format_string[i])
+                    i += 1
+                
+                if format_string[i] == 'k':
+                    print(invert_lengthen(param, num),end="")
+                    skip = i - idx
+                else:
+                    print(format_string[idx],end="")
+            elif format_string[idx] == '#' and format_string[idx+1] == '.': # #.5k
+                i = idx + 2
+                num = 0
+                
+                while is_number(format_string[i]):
+                    num *= 10
+                    num += int(format_string[i])
+                    i += 1
+                
+                if format_string[i] == 'k' and i > idx + 2:
+                    print(invert_shorten(param, num),end="")
+                    skip = i - idx
+                else:
+                    print(format_string[idx],end="")
+                
             else:
                 print(format_string[idx],end="")
         else:
-            shouldDo=True
+            skip -= 1
     print("")
 
 data=sys.stdin.readlines()
