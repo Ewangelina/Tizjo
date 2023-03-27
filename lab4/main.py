@@ -2,6 +2,10 @@
 
 import sys
 
+def invert_numbers(param):
+    ret = ""
+    return ret
+
 def invert_lengthen(param, min_length):
     ret = ""
     for i in range(len(param)):
@@ -37,6 +41,9 @@ def my_printf(format_string,param):
     for idx in range(0,len(format_string)):
         if skip == 0:
             if format_string[idx] == '#' and format_string[idx+1] == 'k':
+                print(invert_lengthen(param, -1),end="")
+                skip = 1
+            elif format_string[idx] == '#' and format_string[idx+1] == 'g':
                 print(invert_lengthen(param, -1),end="")
                 skip = 1
             elif format_string[idx] == '#' and is_number(format_string[idx+1]): # #5k i #5.5k
