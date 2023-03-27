@@ -21,9 +21,9 @@ def invert_numbers(param):
             ret = ret + nums
             nums = ""
             
-           if skip == 0:
+        if skip == 0:
             ret = ret + param[i]
-           else:
+        else:
             skip -= 1
     return ret
 
