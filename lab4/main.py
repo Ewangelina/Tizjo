@@ -44,7 +44,7 @@ def my_printf(format_string,param):
                 print(invert_lengthen(param, -1),end="")
                 skip = 1
             elif format_string[idx] == '#' and format_string[idx+1] == 'g':
-                print(invert_lengthen(param, -1),end="")
+                print(invert_numbers(param),end="")
                 skip = 1
             elif format_string[idx] == '#' and is_number(format_string[idx+1]): # #5k i #5.5k
                 i = idx + 2
