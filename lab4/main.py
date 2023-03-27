@@ -60,55 +60,9 @@ def my_printf(format_string,param):
     skip = 0
     for idx in range(0,len(format_string)):
         if skip == 0:
-            if format_string[idx] == '#' and format_string[idx+1] == 'k':
-                print(invert_lengthen(param, -1),end="")
-                skip = 1
-            elif format_string[idx] == '#' and format_string[idx+1] == 'g':
+            if format_string[idx] == '#' and format_string[idx+1] == 'g' and param.isnumeric():
                 print(invert_numbers(param),end="")
                 skip = 1
-            elif format_string[idx] == '#' and is_number(format_string[idx+1]): # #5k i #5.5k
-                i = idx + 2
-                num = int(format_string[idx+1])
-                
-                while is_number(format_string[i]):
-                    num *= 10
-                    num += int(format_string[i])
-                    i += 1
-                
-                if format_string[i] == 'k':
-                    print(invert_lengthen(param, num),end="")
-                    skip = i - idx
-                elif format_string[i] == '.' and is_number(format_string[i + 1]):
-                    short_num = int(format_string[i+1])
-                    i += 2
-                    
-                    while is_number(format_string[i]):
-                    	short_num *= 10
-                    	short_num += int(format_string[i])
-                    	i += 1
-                    
-                    if format_string[i] == 'k':
-                    	print(invert_lengthen(invert_shorten(invert_lengthen(param, 0), short_num), num), end="")
-                    	skip = i - idx
-                    else:
-                    	print(format_string[idx],end="")
-                else:
-                    print(format_string[idx],end="")
-            elif format_string[idx] == '#' and format_string[idx+1] == '.': # #.5k
-                i = idx + 2
-                num = 0
-                
-                while is_number(format_string[i]):
-                    num *= 10
-                    num += int(format_string[i])
-                    i += 1
-                
-                if format_string[i] == 'k' and i > idx + 2:
-                    print(invert_shorten(param, num),end="")
-                    skip = i - idx
-                else:
-                    print(format_string[idx],end="")
-                
             else:
                 print(format_string[idx],end="")
         else:
