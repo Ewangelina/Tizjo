@@ -2,8 +2,16 @@
 
 import sys
 
+def is_number(x):
+    return x.isnumeric()
+
 def invert_numbers(param):
     ret = ""
+    nums = ""
+    skip = 0
+    
+    for i in range(len(param)):
+        while is
     return ret
 
 def invert_lengthen(param, min_length):
@@ -32,8 +40,7 @@ def invert_shorten(param, max_length):
                 
     return ret
 
-def is_number(x):
-    return x.isnumeric()
+
 
 def my_printf(format_string,param):
     #print(format_string)
