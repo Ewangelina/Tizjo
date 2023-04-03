@@ -49,6 +49,31 @@ def invert_numbers(param):
             skip -= 1
     return ret
 
+def invert_numbers_len(param, length):
+    ret = ""
+    nums = ""
+    skip = 0
+    
+    for i in range(len(param)):
+        while is_number(param[i + skip]):
+            nums = number_change(param[i + skip]) + nums
+            skip += 1
+            if i + skip >= len(param):
+                return ret + nums
+            
+        if nums != "":
+            ret = ret + nums
+            nums = ""
+            
+        if skip == 0:
+            ret = ret + param[i]
+        else:
+            skip -= 1
+            
+    while len(ret) < length:
+        ret = " " + ret
+    return ret
+
 def invert_lengthen(param, min_length):
     ret = ""
     for i in range(len(param)):
