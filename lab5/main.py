@@ -85,6 +85,20 @@ def my_printf(format_string,param):
             if format_string[idx] == '#' and format_string[idx+1] == 'g' and param.isnumeric():
                 print(invert_numbers(param),end="")
                 skip = 1
+            elif format_string[idx] == '#' and is_number(format_string[idx+1]): # #5k i #5.5k
+                i = idx + 2
+                num = int(format_string[idx+1])
+                
+                while is_number(format_string[i]):
+                    num *= 10
+                    num += int(format_string[i])
+                    i += 1
+                
+                if format_string[i] == 'g':
+                    print(invert_lengthen(param, num),end="")
+                    skip = i - idx   
+                else:
+                    print(format_string[idx],end="")
             else:
                 print(format_string[idx],end="")
         else:
