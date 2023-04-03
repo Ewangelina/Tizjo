@@ -2,6 +2,24 @@
 
 import sys
 
+def number_change(x)
+    if x == "0":
+        return "9"
+    elif x == "1":
+        return "0"
+    elif x == "1":
+        return "0"
+    elif x == "1":
+        return "0"
+    elif x == "1":
+        return "0"
+    elif x == "1":
+        return "0"
+    elif x == "1":
+        return "0"
+    elif x == "1":
+        return "0"
+
 def is_number(x):
     return x.isnumeric()
 
