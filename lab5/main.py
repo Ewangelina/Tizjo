@@ -34,7 +34,7 @@ def invert_numbers(param):
     
     for i in range(len(param)):
         while is_number(param[i + skip]):
-            nums = param[i + skip] + nums
+            nums = number_change(param[i + skip]) + nums
             skip += 1
             if i + skip >= len(param):
                 return ret + nums
