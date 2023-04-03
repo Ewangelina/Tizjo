@@ -23,6 +23,8 @@ def number_change(x)
         return "7"
     elif x == "9":
         return "8"
+    else:
+        return x
 
 def is_number(x):
     return x.isnumeric()
@@ -56,10 +58,13 @@ def invert_numbers_len(param, length):
     
     for i in range(len(param)):
         while is_number(param[i + skip]):
-            nums = number_change(param[i + skip]) + nums
+            nums = nums + number_change(param[i + skip])
             skip += 1
             if i + skip >= len(param):
-                return ret + nums
+                ret = ret + nums
+                while len(ret) < length:
+                    ret = " " + ret
+                return ret
             
         if nums != "":
             ret = ret + nums
