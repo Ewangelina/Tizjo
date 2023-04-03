@@ -2,7 +2,7 @@
 
 import sys
 
-def number_change(x)
+def number_change(x):
     if x == "0":
         return "9"
     elif x == "1":
@@ -112,10 +112,7 @@ def my_printf(format_string,param):
     skip = 0
     for idx in range(0,len(format_string)):
         if skip == 0:
-            if format_string[idx] == '#' and format_string[idx+1] == 'g' and param.isnumeric():
-                print(invert_numbers(param),end="")
-                skip = 1
-            elif format_string[idx] == '#' and is_number(format_string[idx+1]): # #5k i #5.5k
+            if format_string[idx] == '#' and is_number(format_string[idx+1]) and param.isnumeric(): # #5g
                 i = idx + 2
                 num = int(format_string[idx+1])
                 
@@ -125,7 +122,7 @@ def my_printf(format_string,param):
                     i += 1
                 
                 if format_string[i] == 'g':
-                    print(invert_lengthen(param, num),end="")
+                    print(invert_numbers_len(param, num),end="")
                     skip = i - idx   
                 else:
                     print(format_string[idx],end="")
