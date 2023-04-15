@@ -29,29 +29,9 @@ def number_change(x):
 def is_number(x):
     return x.isnumeric()
 
-def invert_numbers(param):
-    ret = ""
-    nums = ""
-    skip = 0
-    
-    for i in range(len(param)):
-        while is_number(param[i + skip]):
-            nums = number_change(param[i + skip]) + nums
-            skip += 1
-            if i + skip >= len(param):
-                return ret + nums
-            
-        if nums != "":
-            ret = ret + nums
-            nums = ""
-            
-        if skip == 0:
-            ret = ret + param[i]
-        else:
-            skip -= 1
-    return ret
 
-def invert_numbers_len(param, length):
+
+def invert_numbers_len(param, length, filler):
     ret = ""
     nums = ""
     skip = 0
@@ -63,7 +43,7 @@ def invert_numbers_len(param, length):
             if i + skip >= len(param):
                 ret = ret + nums
                 while len(ret) < length:
-                    ret = " " + ret
+                    ret = filler + ret
                 return ret
             
         if nums != "":
@@ -74,37 +54,11 @@ def invert_numbers_len(param, length):
             ret = ret + param[i]
         else:
             skip -= 1
-            
+                	
     while len(ret) < length:
-        ret = " " + ret
+        ret = filler + ret
+        
     return ret
-
-def invert_lengthen(param, min_length):
-    ret = ""
-    for i in range(len(param)):
-        if param[i].islower():
-            ret = ret + param[i].upper()
-        else:
-            ret = ret + param[i].lower()
-            
-    while len(ret) < min_length:
-        ret = " " + ret
-    
-    return ret
-
-def invert_shorten(param, max_length):
-    ret = ""
-    for i in range(max_length):
-    	if i > len(param):
-            break
-            
-    	if param[i].islower():
-            ret = ret + param[i].upper()
-    	else:
-            ret = ret + param[i].lower()
-                
-    return ret
-
 
 
 def my_printf(format_string,param):
@@ -115,6 +69,9 @@ def my_printf(format_string,param):
             if format_string[idx] == '#' and is_number(format_string[idx+1]) and param.isnumeric(): # #5g
                 i = idx + 2
                 num = int(format_string[idx+1])
+                filler = " "
+                if num == 0:
+                    filler = "9"
                 
                 while is_number(format_string[i]):
                     num *= 10
@@ -122,7 +79,7 @@ def my_printf(format_string,param):
                     i += 1
                 
                 if format_string[i] == 'g':
-                    print(invert_numbers_len(param, num),end="")
+                    print(invert_numbers_len(param, num, filler),end="")
                     skip = i - idx   
                 else:
                     print(format_string[idx],end="")
