@@ -26,6 +26,8 @@ def invert_numbers_len(param, length, filler):
             if i + skip >= len(param):
                 ret = ret + nums
                 while len(ret) < length:
+                    if param[0] == "-":
+                        length++
                     if (param[0] == "-" and filler != " "):
                         ret = ret[0] + filler + ret[1:len(ret)]
                     else:
@@ -41,6 +43,9 @@ def invert_numbers_len(param, length, filler):
         else:
             skip -= 1
                 	
+    if param[0] == "-":
+            length++
+            
     while len(ret) < length:
         if (param[0] == "-" and filler != " "):
             ret = ret[0] + filler + ret[1:len(ret)]
