@@ -43,7 +43,10 @@ def invert_numbers_len(param, length, filler):
             if i + skip >= len(param):
                 ret = ret + nums
                 while len(ret) < length:
-                    ret = filler + ret
+                    if (param[0] == "-" and filler != " "):
+                        ret = ret[0] + filler + ret[1:len(ret)]
+                    else:
+                        ret = filler + ret
                 return ret
             
         if nums != "":
@@ -56,8 +59,8 @@ def invert_numbers_len(param, length, filler):
             skip -= 1
                 	
     while len(ret) < length:
-        if (param < 0):
-            ret = pet[0] + filler + ret[1:end]
+        if (param[0] == "-" and filler != " "):
+            ret = ret[0] + filler + ret[1:len(ret)]
         else:
             ret = filler + ret
         
@@ -69,7 +72,7 @@ def my_printf(format_string,param):
     skip = 0
     for idx in range(0,len(format_string)):
         if skip == 0:
-            if format_string[idx] == '#' and is_number(format_string[idx+1]) and param.isnumeric(): # #5g
+            if format_string[idx] == '#' and is_number(format_string[idx+1]): # #5g
                 i = idx + 2
                 num = int(format_string[idx+1])
                 filler = " "
