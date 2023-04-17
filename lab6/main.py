@@ -68,7 +68,7 @@ def my_printf(format_string,param):
                 num = int(format_string[idx+2])
                 filler = " "
                 if num == 0:
-                    filler = "1"
+                    filler = "0"
                 
                 while is_number(format_string[i]):
                     num *= 10
