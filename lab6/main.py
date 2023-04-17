@@ -60,12 +60,12 @@ def my_printf(format_string,param):
     skip = 0
     for idx in range(0,len(format_string)):
         if skip == 0:
-            if format_string[idx] == '#' and is_number(format_string[idx+1]): # #5g
-                i = idx + 2
-                num = int(format_string[idx+1])
+            if format_string[idx] == '#' and format_string[idx+1] == '.' and is_number(format_string[idx+2]): # #.5g
+                i = idx + 3
+                num = int(format_string[idx+2])
                 filler = " "
                 if num == 0:
-                    filler = "9"
+                    filler = "1"
                 
                 while is_number(format_string[i]):
                     num *= 10
