@@ -2,15 +2,18 @@
 
 import sys
 
-def number_change(x):
-    try:
-        num = int(x)
-        return string((((x * 9) + 1) % 10))
-    except:
-        return x
-
 def is_number(x):
     return x.isnumeric()
+    
+    
+def number_change(x):
+    if is_number(x):
+        num = int(x)
+        return str((((num * 9) + 1) % 10))
+    else:
+        return x
+
+
 
 
 
@@ -27,7 +30,7 @@ def invert_numbers_len(param, length, filler):
                 ret = ret + nums
                 while len(ret) < length:
                     if param[0] == "-":
-                        length++
+                        length += 1
                     if (param[0] == "-" and filler != " "):
                         ret = ret[0] + filler + ret[1:len(ret)]
                     else:
@@ -44,7 +47,7 @@ def invert_numbers_len(param, length, filler):
             skip -= 1
                 	
     if param[0] == "-":
-            length++
+            length += 1
             
     while len(ret) < length:
         if (param[0] == "-" and filler != " "):
