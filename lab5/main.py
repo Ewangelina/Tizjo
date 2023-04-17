@@ -56,7 +56,10 @@ def invert_numbers_len(param, length, filler):
             skip -= 1
                 	
     while len(ret) < length:
-        ret = filler + ret
+        if (param < 0):
+            ret = pet[0] + filler + ret[1:end]
+        else:
+            ret = filler + ret
         
     return ret
 
