@@ -5,7 +5,7 @@ import sys
 def number_change(x):
     try:
         num = int(x)
-        return string((x * 9 % 10))
+        return string((((x * 9) + 1) % 10))
     except:
         return x
 
