@@ -1,20 +1,20 @@
-totafsdfsf #g fdsfsdf
+totafsdfsf #j fdsfsdf
 5
-totafsd#g fdsfsdf fdfjs
+totafsd#j fdsfsdf fdfjs
 1234
 jfldjfldk # wynik
-test3
-fjdfsfds # g alal
-test4
-djfjkldsjf #g jjjjjj fsfjdljfdlsj flj ldfj
+3
+fjdfsfds # j alal
+4
+djfjkldsjf #j jjjjjj fsfjdljfdlsj flj ldfj
 1598
-gjjkdsljflds #g jdlkfjdslf 3
+gjjkdsljflds #j jdlkfjdslf 3
 83339
-fjdslkfjdl #g tttttt
+fjdslkfjdl #j tttttt
 0
-fjdlsjfkl #g oooolll
-90
-rwrewrew #g fjdslkjfdl
+fjdlsjfkl #j oooolll
+15
+rwrewrew #j fjdslkjfdl
 11
-fjdlskjfldjflj #g rewrewrew
+fjdlskjfldjflj #j rewrewrew
 999999
