@@ -23,8 +23,9 @@ def hexadecimal(param):
     ret = ""
     
     for i in range(2,len(new_param)):
-        ret += 
-    return param
+        ret += shiftHex(new_param[i])
+        
+    return ret
 
 
 def my_printf(format_string,param):
