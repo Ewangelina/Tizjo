@@ -2,7 +2,28 @@
 
 import sys
 
+def shiftHex(x):
+    if x == 'a':
+        return 'g'
+    elif x == 'b':
+        return 'h'
+    elif x == 'c':
+        return 'i'
+    elif x == 'd':
+        return 'j'
+    elif x == 'e':
+        return 'k'
+    elif x == 'f':
+        return 'l'
+    else:
+        return x
+
 def hexadecimal(param):
+    new_param = hex(int(param))
+    ret = ""
+    
+    for i in range(2,len(new_param)):
+        ret += 
     return param
 
 
