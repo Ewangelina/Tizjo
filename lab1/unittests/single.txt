@@ -1,0 +1,104 @@
+write #.1k word
+a
+write #.1k word
+b
+write #.1k word
+c
+write #.1k word
+d
+write #.1k word
+e
+write #.1k word
+f
+write #.1k word
+g
+write #.1k word
+h
+write #.1k word
+i
+write #.1k word
+j
+write #.1k word
+k
+write #.1k word
+l
+write #.1k word
+m
+write #.1k word
+n
+write #.1k word
+o
+write #.1k word
+p
+write #.1k word
+q
+write #.1k word
+r
+write #.1k word
+s
+write #.1k word
+t
+write #.1k word
+u
+write #.1k word
+v
+write #.1k word
+w
+write #.1k word
+x
+write #.1k word
+y
+write #.1k word
+z
+write #.1k word
+A
+write #.1k word
+B
+write #.1k word
+C
+write #.1k word
+D
+write #.1k word
+E
+write #.1k word
+F
+write #.1k word
+G
+write #.1k word
+H
+write #.1k word
+I
+write #.1k word
+J
+write #.1k word
+K
+write #.1k word
+L
+write #.1k word
+M
+write #.1k word
+N
+write #.1k word
+O
+write #.1k word
+P
+write #.1k word
+Q
+write #.1k word
+R
+write #.1k word
+S
+write #.1k word
+T
+write #.1k word
+U
+write #.1k word
+V
+write #.1k word
+W
+write #.1k word
+X
+write #.1k word
+Y
+write #.1k word
+Z
