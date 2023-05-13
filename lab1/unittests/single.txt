@@ -1,104 +1,104 @@
-write #.1k word
+write #k word
 a
-write #.1k word
+write #k word
 b
-write #.1k word
+write #k word
 c
-write #.1k word
+write #k word
 d
-write #.1k word
+write #k word
 e
-write #.1k word
+write #k word
 f
-write #.1k word
+write #k word
 g
-write #.1k word
+write #k word
 h
-write #.1k word
+write #k word
 i
-write #.1k word
+write #k word
 j
-write #.1k word
+write #k word
 k
-write #.1k word
+write #k word
 l
-write #.1k word
+write #k word
 m
-write #.1k word
+write #k word
 n
-write #.1k word
+write #k word
 o
-write #.1k word
+write #k word
 p
-write #.1k word
+write #k word
 q
-write #.1k word
+write #k word
 r
-write #.1k word
+write #k word
 s
-write #.1k word
+write #k word
 t
-write #.1k word
+write #k word
 u
-write #.1k word
+write #k word
 v
-write #.1k word
+write #k word
 w
-write #.1k word
+write #k word
 x
-write #.1k word
+write #k word
 y
-write #.1k word
+write #k word
 z
-write #.1k word
+write #k word
 A
-write #.1k word
+write #k word
 B
-write #.1k word
+write #k word
 C
-write #.1k word
+write #k word
 D
-write #.1k word
+write #k word
 E
-write #.1k word
+write #k word
 F
-write #.1k word
+write #k word
 G
-write #.1k word
+write #k word
 H
-write #.1k word
+write #k word
 I
-write #.1k word
+write #k word
 J
-write #.1k word
+write #k word
 K
-write #.1k word
+write #k word
 L
-write #.1k word
+write #k word
 M
-write #.1k word
+write #k word
 N
-write #.1k word
+write #k word
 O
-write #.1k word
+write #k word
 P
-write #.1k word
+write #k word
 Q
-write #.1k word
+write #k word
 R
-write #.1k word
+write #k word
 S
-write #.1k word
+write #k word
 T
-write #.1k word
+write #k word
 U
-write #.1k word
+write #k word
 V
-write #.1k word
+write #k word
 W
-write #.1k word
+write #k word
 X
-write #.1k word
+write #k word
 Y
-write #.1k word
+write #k word
 Z

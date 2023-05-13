@@ -1,10 +1,10 @@
-totafsdfsf TE fdsfsdf
-totafsdTesT2 fdsfsdf fdfjs
-jfldjfldk TEST3 wynik
-fjdfsfds T alal
-djfjkldsjf D jjjjjj fsfjdljfdlsj flj ldfj
-gjjkdsljflds TEST6 jdlkfjdslf
-fjdslkfjdl test7 tttttt
-fjdlsjfkl TE oooolll
-tEsT fjdslkjfdl
-fjdlskjfldjflj 1
+totafsdfsf TEST fdsfsdf
+totafsdtEST2 fdsfsdf fdfjs
+TEST3wynik
+fjdfsfds TEST4
+djfjkldsjf poin 0test jjjjjj fsfjdljfdlsj flj ldfj
+gjjkdsljflds 6 jdlkfjdslf
+fjdslkfjdl BBBtttttt
+fjdlsjfkl 8_8 oooolll
+rwrewrew TeSt9 fjdslkjfdl
+fjdlskjfldjfljTEst
