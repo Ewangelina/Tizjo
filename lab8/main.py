@@ -42,6 +42,7 @@ def hexadecimal_length(param, length, filler):
         
     return ret
 
+
 def my_printf(format_string,param):
     #print(format_string)
     skip = 0
