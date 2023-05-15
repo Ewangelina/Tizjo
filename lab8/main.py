@@ -2,6 +2,9 @@
 
 import sys
 
+def is_number(x):
+    return x.isnumeric()
+
 def shiftHex(x):
     if x == 'a':
         return 'g'
@@ -27,6 +30,17 @@ def hexadecimal(param):
         
     return ret
 
+def hexadecimal_length(param, length, filler):
+    new_param = hex(int(param))
+    ret = ""
+    
+    for i in range(2,len(new_param)):
+        ret += shiftHex(new_param[i])
+
+    while (len(ret) < length):
+        ret = filler + ret
+        
+    return ret
 
 def my_printf(format_string,param):
     #print(format_string)
