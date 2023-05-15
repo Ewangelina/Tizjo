@@ -50,6 +50,21 @@ def my_printf(format_string,param):
             if format_string[idx] == '#' and format_string[idx+1] == 'j':
                 print(hexadecimal(param),end="")
                 skip = 1
+            elif format_string[idx] == '#' and format_string[idx+1] == '.' and is_number(format_string[idx+2]):
+                i = idx + 3
+                num = int(format_string[idx+2])
+                filler = "o"
+
+                while is_number(format_string[i]):
+                    num *= 10
+                    num += int(format_string[i])
+                    i += 1
+                
+                if format_string[i] == 'j':
+                    print(hexadecimal_length(param, num, filler),end="")
+                    skip = i - idx   
+                else:
+                    print(format_string[idx],end="")
             else:
                 print(format_string[idx],end="")
         else:
