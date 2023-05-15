@@ -18,6 +18,8 @@ def shiftHex(x):
         return 'k'
     elif x == 'f':
         return 'l'
+    elif x == '0':
+        return 'o'
     else:
         return x
 
