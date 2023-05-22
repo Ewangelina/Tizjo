@@ -58,14 +58,14 @@ jfldjfldk #.1h wynik
 819529629125.0
 fjdfsfds #.7h alal
 819529629125149852629.5486
-totafsdfsf #.25j fdsfsdf
-6514684
-totafsd#.101j fdsfsdf fdfjs
-852625
-jfldjfldk #.10j wynik
-819529629125
-fjdfsfds #.100j alal
-819529629125149852629
+totafsdfsf #.25h fdsfsdf
+6514684.624649895
+totafsd#.101h fdsfsdf fdfjs
+852625.618492849843849492985
+jfldjfldk #.10h wynik
+819529629125.624684684638468244868934898249
+fjdfsfds #.100h alal
+819529629125149852629.0
 write %a word
 test
 write %b word
@@ -115,4 +115,104 @@ test
 write %y word
 test
 write %z word
+test
+write %.55a word
+15.48
+write %.55b word
+15.48
+write %.55c word
+15.48
+write %.55d word
+15.48
+write %.55e word
+15.48
+write %.55f word
+15.48
+write %.55g word
+15.48
+write %.55i word
+15.48
+write %.55j word
+15.48
+write %.55k word
+15.48
+write %.55l word
+15.48
+write %.55m word
+15.48
+write %.55n word
+15.48
+write %.55o word
+15.48
+write %.55p word
+15.48
+write %.55q word
+15.48
+write %.55r word
+15.48
+write %.55s word
+15.48
+write %.55t word
+15.48
+write %.55u word
+15.48
+write %.55v word
+15.48
+write %.55w word
+15.48
+write %.55x word
+15.48
+write %.55y word
+15.48
+write %.55z word
+15.48
+write %.a word
+test
+write %.b word
+test
+write %.c word
+test
+write %.d word
+test
+write %.e word
+test
+write %.f word
+test
+write %.g word
+test
+write %.i word
+test
+write %.j word
+test
+write %.k word
+test
+write %.l word
+test
+write %.m word
+test
+write %.n word
+test
+write %.o word
+test
+write %.p word
+test
+write %.q word
+test
+write %.r word
+test
+write %.s word
+test
+write %.t word
+test
+write %.u word
+test
+write %.v word
+test
+write %.w word
+test
+write %.x word
+test
+write %.y word
+test
+write %.z word
 test

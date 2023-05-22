@@ -1,0 +1,50 @@
+write %.55a word
+15.48
+write %.55b word
+15.48
+write %.55c word
+15.48
+write %.55d word
+15.48
+write %.55e word
+15.48
+write %.55f word
+15.48
+write %.55g word
+15.48
+write %.55i word
+15.48
+write %.55j word
+15.48
+write %.55k word
+15.48
+write %.55l word
+15.48
+write %.55m word
+15.48
+write %.55n word
+15.48
+write %.55o word
+15.48
+write %.55p word
+15.48
+write %.55q word
+15.48
+write %.55r word
+15.48
+write %.55s word
+15.48
+write %.55t word
+15.48
+write %.55u word
+15.48
+write %.55v word
+15.48
+write %.55w word
+15.48
+write %.55x word
+15.48
+write %.55y word
+15.48
+write %.55z word
+15.48
