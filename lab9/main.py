@@ -31,8 +31,34 @@ def new_digit(x):
     return (x+5)%10
 
 
-def float_dot(param, num):
+def float_dot(param, l):
     ret = ""
+    i = 0
+    while (not (param[i] == '.')) and i < len(param):
+        ret = ret + num_to_letter(param[i])
+        i = i + 1
+
+    i = i + 1
+    ret = ret + '.'
+    w = 0
+
+    while w < l - 1:
+        if (i < len(param)):
+            ret = ret + new_digit(param[i])
+        else:
+           ret = ret + new_digit(0)
+        i = i + 1
+        w = w + 1
+
+    if (i + 1 < len(param)):
+        #round here
+        ret = ret + new_digit(param[i])
+    elif (i < len(param)):
+        ret = ret + new_digit(param[i])
+    else:
+        ret = ret + new_digit(0)
+
+    
     return ret
 
 def my_printf(format_string,param):
