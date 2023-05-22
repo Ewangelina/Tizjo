@@ -68,6 +68,7 @@ endef
 	$(call perform_test,small,Small)
 	$(call perform_test,large,Large)
 	$(call perform_test,long,Long)
+	$(call perform_test,letters,Letters)
 
 	$(call restore_data)
 
@@ -80,6 +81,7 @@ generate:
 	$(call generate_answers,small)
 	$(call generate_answers,large)
 	$(call generate_answers,long)
+	$(call generate_answers,letters)
 
 	$(call restore_data)
 
@@ -91,3 +93,4 @@ merge:
 	$(call merge_test,small)
 	$(call merge_test,large)
 	$(call merge_test,long)
+	$(call merge_test,letters)

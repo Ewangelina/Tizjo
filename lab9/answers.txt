@@ -1,10 +1,16 @@
-totafsdfsf test fdsfsdf
-totafsdtest2 fdsfsdf fdfjs
-jfldjfldk # wynik
-fjdfsfds # k alal
-djfjkldsjf test5 jjjjjj fsfjdljfdlsj flj ldfj
-gjjkdsljflds test6 jdlkfjdslf
-fjdslkfjdl test7 tttttt
-fjdlsjfkl test8 oooolll
-rwrewrew test9 fjdslkjfdl
-fjdlskjfldjflj test10 rewrewrew
+totafsdfsf #.3h fdsfsdf
+1.1
+totafsd#.1h fdsfsdf fdfjs
+2.2
+jfldjfldk #.1h wynik
+3.3
+fjdfsfds #.6h alal
+4.4
+djfjkldsjf #.5h jjjjjj fsfjdljfdlsj flj ldfj
+5.5
+gjjkdsljflds #.2h jdlkfjdslf 3
+6.6
+fjdslkfjdl #.1h tttttt
+7.7
+fjdlsjfkl #.2h oooolll
+8.8

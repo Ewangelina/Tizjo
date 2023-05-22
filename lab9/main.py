@@ -27,8 +27,12 @@ def num_to_letter(x):
     if x == '9':
         return 'j'
 
-def new_digit(x):
-    return (x+5)%10
+def new_digit(y):
+    try:
+        x = int(y)
+        return str((x+5)%10)
+    except:
+        return y
 
 
 def float_dot(param, l):
