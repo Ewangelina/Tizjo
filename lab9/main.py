@@ -55,8 +55,10 @@ def float_dot(param, l):
         w = w + 1
 
     if (i + 1 < len(param)):
-        #round here
-        ret = ret + new_digit(param[i])
+        if (int(param[i+1]) >= 5):
+            ret = ret + new_digit(str(int(param[i])+1))
+        else:
+            ret = ret + new_digit(param[i])
     elif (i < len(param)):
         ret = ret + new_digit(param[i])
     else:
