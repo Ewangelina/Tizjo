@@ -5,55 +5,42 @@ import sys
 def is_number(x):
     return x.isnumeric()
 
-def shiftHex(x):
-    if x == 'a':
+def num_to_letter(x):
+    if x == '0':
+        return 'a'
+    if x == '1':
+        return 'b'
+    if x == '2':
+        return 'c'
+    if x == '3':
+        return 'd'
+    if x == '4':
+        return 'e'
+    if x == '5':
+        return 'f'
+    if x == '6':
         return 'g'
-    elif x == 'b':
+    if x == '7':
         return 'h'
-    elif x == 'c':
+    if x == '8':
         return 'i'
-    elif x == 'd':
+    if x == '9':
         return 'j'
-    elif x == 'e':
-        return 'k'
-    elif x == 'f':
-        return 'l'
-    elif x == '0':
-        return 'o'
-    else:
-        return x
 
-def hexadecimal(param):
-    new_param = hex(int(param))
+def new_digit(x):
+    return (x+5)%10
+
+
+def float_dot(param, num):
     ret = ""
-    
-    for i in range(2,len(new_param)):
-        ret += shiftHex(new_param[i])
-        
     return ret
-
-def hexadecimal_length(param, length, filler):
-    new_param = hex(int(param))
-    ret = ""
-    
-    for i in range(2,len(new_param)):
-        ret += shiftHex(new_param[i])
-
-    while (len(ret) < length):
-        ret = filler + ret
-        
-    return ret
-
 
 def my_printf(format_string,param):
     #print(format_string)
     skip = 0
     for idx in range(0,len(format_string)):
         if skip == 0:
-            if format_string[idx] == '#' and format_string[idx+1] == 'j':
-                print(hexadecimal(param),end="")
-                skip = 1
-            elif format_string[idx] == '#' and format_string[idx+1] == '.' and is_number(format_string[idx+2]):
+            if format_string[idx] == '#' and format_string[idx+1] == '.' and is_number(format_string[idx+2]):
                 i = idx + 3
                 num = int(format_string[idx+2])
                 filler = "o"
@@ -63,8 +50,8 @@ def my_printf(format_string,param):
                     num += int(format_string[i])
                     i += 1
                 
-                if format_string[i] == 'j':
-                    print(hexadecimal_length(param, num, filler),end="")
+                if format_string[i] == 'h':
+                    print(float_dot(param, num),end="")
                     skip = i - idx   
                 else:
                     print(format_string[idx],end="")
