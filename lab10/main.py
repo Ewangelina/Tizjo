@@ -3,12 +3,7 @@
 import sys
 
 def make_hex(x):
-    h = str(hex(x))
-    ret = ""
-    for i in range(2, len(h)):
-        ret += h[i]
-    
-    return ret
+    return str(hex(x)).replace('0x', '')
 
 def is_number(x):
     return x.isnumeric()
@@ -34,13 +29,13 @@ def do_print(input):
 
 
 def my_printf(format_string,param):
-    #print(format_string)
+    #print(int("1.1"))
     skip = 0
     for idx in range(0,len(format_string) - 1):
         if skip == 0:
             if format_string[idx] == '#' and format_string[idx+1] == 'a':
                 try:
-                    print(getF(param),end="")
+                    print(do_print(param),end="")
                     skip = 1  
                 except Exception as a:
                     print(format_string[idx],end="")
