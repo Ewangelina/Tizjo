@@ -18,11 +18,12 @@ def no_digits(x):
     for i in range(0, len(x)):
         if is_number(x[i]):
             ret += 1
+    return ret
 
 def getF(input):
     o = int(input)
     n = no_digits(input)
-    return int((o*2)/n))
+    return int((o*2)/n)
 
 def do_print(input):
     f = getF(input)
@@ -31,7 +32,7 @@ def do_print(input):
     else:
         return make_hex(f)
 
-        
+
 def my_printf(format_string,param):
     #print(format_string)
     skip = 0
@@ -41,12 +42,13 @@ def my_printf(format_string,param):
                 try:
                     print(getF(param),end="")
                     skip = 1  
-                except:
+                except Exception as a:
                     print(format_string[idx],end="")
             else:
                 print(format_string[idx],end="")
         else:
             skip -= 1
+    print(format_string[len(format_string) - 1],end="")
     print("")
 
 data=sys.stdin.readlines()
