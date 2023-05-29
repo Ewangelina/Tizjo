@@ -12,15 +12,15 @@ totafsdfsf 85 fdsfsdf
 totafsd74 fdsfsdf fdfjs
 jfldjfldk 4d wynik
 fjdfsfds 20 alal
-djfjkldsjf -11 jjjjjj fsfjdljfdlsj flj ldfj
-totafsdfsf gfbegie.107 fdsfsdf
-totafsdifcgcf.7 fdsfsdf fdfjs
-jfldjfldk ibjfcjgcjbcf.5 wynik
-fjdfsfds ibjfcjgcjbcfbejifcgcj.0931555 alal
-totafsdfsf gfbegie.1791943405555555555555555 fdsfsdf
-totafsdifcgcf.16394739439839494743055555555555555555555555555555555555555555555555555555555555555555555555555555555 fdsfsdf fdfjs
-jfldjfldk ibjfcjgcjbcf.1791391391 wynik
-fjdfsfds ibjfcjgcjbcfbejifcgcj.5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 alal
+djfjkldsjf -b jjjjjj fsfjdljfdlsj flj ldfj
+totafsdfsf 1861338 fdsfsdf
+totafsd284208 fdsfsdf fdfjs
+jfldjfldk 136588271520 wynik
+fjdfsfds 78050440869061885952 alal
+totafsdfsf 16286710 fdsfsdf
+totafsd284208 fdsfsdf fdfjs
+jfldjfldk 1258e6b4b57 wynik
+fjdfsfds 78050440869061885952 alal
 write %h word
 write %b word
 write %c word
