@@ -43,7 +43,8 @@ def my_printf(format_string,param):
                 print(format_string[idx],end="")
         else:
             skip -= 1
-    print(format_string[len(format_string) - 1],end="")
+    if (skip == 0):
+        print(format_string[len(format_string) - 1],end="")
     print("")
 
 data=sys.stdin.readlines()
