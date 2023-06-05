@@ -1,0 +1,196 @@
+totafsdfsf #wa fdsfsdf
+1.1
+totafsd# fdsfsdf fdfjs
+2.2
+jfldjfldk # wynik
+3.3
+fjdfsfds # a alal
+4.4
+djfjkldsjf .#15 jjjjjj fsfjdljfdlsj flj ldfj
+5.5
+gjjkdsljflds #22222 jdlkfjdslf
+6.6
+fjdslkfjdl 15a tttttt
+7.7
+fjdlsjfkl #.a oooolll
+8.8
+rwrewrew #.5555 fjdslkjfdl
+9.9
+fjdlskjfldjflj #.a rewrewrew
+10.01
+totafsdfsf #b fdsfsdf
+200
+totafsd#b fdsfsdf fdfjs
+111
+jfldjfldk #b wynik
+77
+fjdfsfds #b alal
+20
+djfjkldsjf #b jjjjjj fsfjdljfdlsj flj ldfj
+-11
+totafsdfsf #b fdsfsdf
+6514684
+totafsd#b fdsfsdf fdfjs
+852625
+jfldjfldk #b wynik
+819529629125
+fjdfsfds #b alal
+819529629125149852629
+totafsdfsf #b fdsfsdf
+65146842
+totafsd#b fdsfsdf fdfjs
+852629
+jfldjfldk #b wynik
+8195296291255
+fjdfsfds #b alal
+819529629125149852629
+write %h word
+test
+write %a word
+test
+write %c word
+test
+write %d word
+test
+write %e word
+test
+write %f word
+test
+write %g word
+test
+write %i word
+test
+write %j word
+test
+write %k word
+test
+write %l word
+test
+write %m word
+test
+write %n word
+test
+write %o word
+test
+write %p word
+test
+write %q word
+test
+write %r word
+test
+write %s word
+test
+write %t word
+test
+write %u word
+test
+write %v word
+test
+write %w word
+test
+write %x word
+test
+write %y word
+test
+write %z word
+test
+write %.55h word
+15.48
+write %.55a word
+15.48
+write %.55c word
+15.48
+write %.55d word
+15.48
+write %.55e word
+15.48
+write %.55f word
+15.48
+write %.55g word
+15.48
+write %.55i word
+15.48
+write %.55j word
+15.48
+write %.55k word
+15.48
+write %.55l word
+15.48
+write %.55m word
+15.48
+write %.55n word
+15.48
+write %.55o word
+15.48
+write %.55p word
+15.48
+write %.55q word
+15.48
+write %.55r word
+15.48
+write %.55s word
+15.48
+write %.55t word
+15.48
+write %.55u word
+15.48
+write %.55v word
+15.48
+write %.55w word
+15.48
+write %.55x word
+15.48
+write %.55y word
+15.48
+write %.55z word
+15.48
+write %.h word
+test
+write %.a word
+test
+write %.c word
+test
+write %.d word
+test
+write %.e word
+test
+write %.f word
+test
+write %.g word
+test
+write %.i word
+test
+write %.j word
+test
+write %.k word
+test
+write %.l word
+test
+write %.m word
+test
+write %.n word
+test
+write %.o word
+test
+write %.p word
+test
+write %.q word
+test
+write %.r word
+test
+write %.s word
+test
+write %.t word
+test
+write %.u word
+test
+write %.v word
+test
+write %.w word
+test
+write %.x word
+test
+write %.y word
+test
+write %.z word
+test
